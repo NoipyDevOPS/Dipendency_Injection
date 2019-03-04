@@ -1,5 +1,6 @@
 import 'package:angular/angular.dart';
 import 'hero_list_component.dart';
+import 'hero_service.dart';
 
 
 @Component(
@@ -8,7 +9,8 @@ import 'hero_list_component.dart';
     <h2>Heroes</h2>
     <hero-list></hero-list>
   ''',
-  directives: [HeroListComponent]
+  directives: [HeroListComponent],
+  providers: [ClassProvider(HeroService)]
 )
 
 class HeroesComponent {}
