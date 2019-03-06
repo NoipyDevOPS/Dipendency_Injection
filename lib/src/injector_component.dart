@@ -39,3 +39,5 @@ class InjectorComponent implements OnInit {
 
   String get rodent => _injector.get(ROUS, "R.O.U.S.'s? I don't think they exist!");
 }
+
+class ROUS {}
