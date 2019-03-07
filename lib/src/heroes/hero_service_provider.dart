@@ -6,4 +6,4 @@ import 'hero_service.dart';
 HeroService heroServiceFactory(Logger logger, UserService userService) =>
   HeroService(logger, userService.user.isAuthorized);
 
-const heroServiceProvider =FactoryProvider(HeroService, heroServiceFactory);
+const heroServiceProvider = FactoryProvider(HeroService, heroServiceFactory);
