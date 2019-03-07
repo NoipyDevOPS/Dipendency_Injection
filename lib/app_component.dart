@@ -32,6 +32,27 @@ import 'src/injector_component.dart';
     FactoryProvider(AppConfig, appConfigFactory),
     ],
 )
+
 class AppComponent {
-  
+  final UserService _userService;
+  final String title;
+
+  AppComponent(AppConfig config, this._userService) : title = config.title;
+
+  bool get isAuthorized {
+    return user.isAuthorized;
+  }
+
+  void nextUser() {
+    _userService.getNewUser();
+  }
+
+  User get user {
+    return _userService.user;
+  }
+
+  String get userInfo =>
+      'Current user, ${user.name}, is' +
+      (isAuthorized ? '' : ' not') +
+      ' authorized. ';
 }
