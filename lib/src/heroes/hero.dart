@@ -3,5 +3,5 @@ class Hero {
   final String name;
   final bool isSecret;
 
-  Hero(this.id, this.isSecret, this.name);
+  Hero(this.id, this.name, [this.isSecret = false]);
 }
