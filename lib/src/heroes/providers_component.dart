@@ -29,8 +29,12 @@ class BetterLogger extends Logger {
   String get id => 'BetterLogger';
 }
 
-@Component()
+/*@Component(
+  selector: 'use-class',
+  template: 'ClassProvider, useClass: {{logger}}',
+  providers: [Logger, useClass:BetterLogger],
+)
 
 class ClassProviderUseClassComponent extends _Base {
   ClassProviderUseClassComponent(Logger logger) : super(logger);
-}
+}*/
