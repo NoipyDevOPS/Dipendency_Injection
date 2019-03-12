@@ -6,7 +6,7 @@ import 'heroes/hero_service_provider.dart';
 import 'logger_service.dart';
 
 @Component(
-  selector: 'my-injector',
+  selector: 'my-injectors',
   template: '''
     <h2>Other Injections</h2>
     <div id="car">{{car.drive()}}</div>
