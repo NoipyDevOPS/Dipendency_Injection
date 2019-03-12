@@ -16,7 +16,8 @@ import 'car_factory.dart';
   providers: [
     ClassProvider(Car),
     ClassProvider(Engine),
-    ClassProvider(Tires),]
+    ClassProvider(Tires),
+    ],
 )
 
 class CarComponent {
