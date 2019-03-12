@@ -6,7 +6,7 @@ import 'src/heroes/heroes_component.dart';
 import 'src/logger_service.dart';
 import 'src/user_service.dart';
 import 'src/injector_component.dart';
-//import 'src/providers_component.dart';
+import 'src/providers_component.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
 
@@ -25,7 +25,7 @@ import 'src/injector_component.dart';
     <my-heroes id="unauthorized" *ngIf="!isAuthorized"></my-heroes>
     <my-providers></my-providers>
   ''',
-  directives: [coreDirectives, CarComponent, HeroesComponent,InjectorComponent],
+  directives: [coreDirectives, CarComponent, HeroesComponent, InjectorComponent, ProvidersComponent],
   providers: [
     ClassProvider(Logger),
     ClassProvider(UserService),
